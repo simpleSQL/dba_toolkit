@@ -1,7 +1,6 @@
 ﻿<#
 Powershell Script to Flip On/Off SQL Server Services
 Version: 1.2
-Compat: SQL Server 2019
 Author: Jack Worthen
 Date: 03/06/2021
 jackworthen.com
