@@ -1,0 +1,1 @@
+PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& {Start-Process PowerShell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -File ""C:\Users\jwort\powershell\gosql.ps1""' -Verb RunAs}"
