@@ -14,8 +14,7 @@ $i
 $i=1
 foreach($service in $svc)
 {
-if (($svc[$i].name -eq "SQLBrowser" -or
-	$svc[$i].name -eq "MSSQLSERVER" -or
+if (($svc[$i].name -eq "MSSQLSERVER" -or
     $svc[$i].name -eq "SQLSERVERAGENT" -or
     $svc[$i].name -eq "MSSQLFDLauncher" -or
     $svc[$i].name -eq "SQLServerReportingServices" -or
