@@ -1,6 +1,7 @@
-﻿<#
+<#
 Powershell Script to Flip On/Off SQL Server Services
 Version: 1.2
+Compat: SQL Server 2019
 Author: Jack Worthen
 Date: 03/06/2021
 jackworthen.com
@@ -13,7 +14,8 @@ $i
 $i=1
 foreach($service in $svc)
 {
-if ($svc[$i].name -eq "MSSQLSERVER" -or
+if (($svc[$i].name -eq "SQLBrowser" -or
+	$svc[$i].name -eq "MSSQLSERVER" -or
     $svc[$i].name -eq "SQLSERVERAGENT" -or
     $svc[$i].name -eq "MSSQLFDLauncher" -or
     $svc[$i].name -eq "SQLServerReportingServices" -or
